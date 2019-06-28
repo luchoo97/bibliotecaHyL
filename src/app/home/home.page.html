@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    
+        <img src="https://firebasestorage.googleapis.com/v0/b/epe3-77ed6.appspot.com/o/Imagen2.png?alt=media&token=52e63a11-63ee-4db8-873a-d084956fe7dd" width="100" height="100" >
+        <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    
+    <ion-title>
+      Inicio
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content color="dark">
+
+  <ion-slides pager="true" style="background: yellow" (ionSlideDidChange)="slideChanged()">
+    <ion-slide >
+        <ion-img src="https://firebasestorage.googleapis.com/v0/b/epe3-77ed6.appspot.com/o/1.jpg?alt=media&token=f2ecf07a-3aee-4730-bc3b-474bc35d8008"></ion-img>
+      </ion-slide>
+      <ion-slide>
+          <ion-img src="https://firebasestorage.googleapis.com/v0/b/epe3-77ed6.appspot.com/o/2.jpg?alt=media&token=4f82a214-35a0-4f1f-b7e9-d87cacc4a2bb"></ion-img>
+      </ion-slide>
+      <ion-slide> 
+          <ion-img src="https://firebasestorage.googleapis.com/v0/b/epe3-77ed6.appspot.com/o/3.jpg?alt=media&token=ed50bf88-f858-4cdd-9341-35deb8b9e63f"></ion-img>
+      </ion-slide>
+    </ion-slides>
+
+
+
+
+    <ion-card class="welcome-card">
+      <ion-img src="https://firebasestorage.googleapis.com/v0/b/epe3-77ed6.appspot.com/o/4.JPG?alt=media&token=817bb841-4867-400d-9825-a5b8cd6ecd5f"></ion-img>
+      <ion-card-header>
+        <ion-card-subtitle>BibliotecaH&L</ion-card-subtitle>
+        <ion-card-title>Bienvenido a nuestra biblioteca</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Acá podras agregar libros bla bla</p>
+      </ion-card-content>
+
+      
+          <ion-button expand="full" (click)="Irlista()">Ingresar</ion-button>
+          <ion-button expand="full" (click)="IrNosotos()">Nosotros...</ion-button>
+
+         
+      
+    </ion-card>
+    
+
+</ion-content>
