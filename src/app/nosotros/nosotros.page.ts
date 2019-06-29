@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ToastController} from '@ionic/angular';
+import { ToastController, NavController} from '@ionic/angular';
 
 @Component({
   selector: 'app-nosotros',
@@ -8,9 +8,13 @@ import { ToastController} from '@ionic/angular';
 })
 export class NosotrosPage implements OnInit {
 
-  constructor(public ToastCtrl: ToastController) { }
+  constructor(public ToastCtrl: ToastController, public navCtrl:NavController) { }
 
   ngOnInit() {
+  }
+
+  Irvolver(){
+    this.navCtrl.navigateBack('home');
   }
 
   async verNotificacion(){

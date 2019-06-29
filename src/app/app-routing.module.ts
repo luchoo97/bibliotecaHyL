@@ -18,7 +18,8 @@ const routes: Routes = [
   { path: 'details/:id', loadChildren: './pages/todo-details/todo-details.module#TodoDetailsPageModule' },
   { path: 'details', loadChildren: './pages/todo-details/todo-details.module#TodoDetailsPageModule'},
   { path: 'ingresar', loadChildren: './ingresar/ingresar.module#IngresarPageModule' },
-  { path: 'nosotros', loadChildren: './nosotros/nosotros.module#NosotrosPageModule' }
+  { path: 'nosotros', loadChildren: './nosotros/nosotros.module#NosotrosPageModule' },
+  { path: 'libros', loadChildren: './libros/libros.module#LibrosPageModule' }
 ];
 
 @NgModule({

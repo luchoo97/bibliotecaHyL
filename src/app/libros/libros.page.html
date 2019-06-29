@@ -1,0 +1,56 @@
+<ion-header>
+    <ion-toolbar color="primary">
+      
+          <img src="https://firebasestorage.googleapis.com/v0/b/epe3-77ed6.appspot.com/o/Imagen2.png?alt=media&token=52e63a11-63ee-4db8-873a-d084956fe7dd" width="100" height="100" >
+          <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      
+      <ion-title>
+        Libros
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+
+<ion-content >
+ <ion-list>
+   
+   <ion-item>
+
+      <img src="https://firebasestorage.googleapis.com/v0/b/epe3-77ed6.appspot.com/o/5.jpg?alt=media&token=886f640e-c211-4370-b539-f072803aa263" width="200" height="200">
+    <ion-card color="warning">
+        
+  <ion-label color="dark">EL JARDIN SECRETO</ion-label>
+    <ion-toggle color="primary"  [(ngModel)]="libro1" ></ion-toggle>
+      <h5 *ngIf="libro1">El jardín secreto es un libro escrito por Frances Hodgson Burnett en 1910, adaptado al cine y a la televisión numerosas veces. Hodgson lo fue publicando a partir de otoño de 1910 en folletos. El libro salió completo en 1911.</h5>
+    
+    </ion-card>
+  </ion-item>
+  <ion-item>
+
+      <img src="https://firebasestorage.googleapis.com/v0/b/epe3-77ed6.appspot.com/o/6.jpg?alt=media&token=ac9713e9-7ca9-43c4-81a7-70ff852860c3" width="200" height="200">
+    <ion-card color="primary">
+        
+  <ion-label color="dark">PINOCHO</ion-label>
+    <ion-toggle color="primary"  [(ngModel)]="libro2" ></ion-toggle>
+      <h5 *ngIf="libro2">Pinocho (en italiano Pinocchio) es un personaje de la literatura italiana y universal, que consiste en una marioneta de madera protagonista del libro "Las aventuras de Pinocho", escrito por Carlo Collodi, seudónimo de Carlo Lorenzini (Florencia 1826-1890), y publicado en un periódico italiano entre 1882 y 1883, con los títulos "Storia di un Burattino" ("Historia de un títere") y "Le avventure di Pinocchio" ("Las aventuras de Pinocho'"), libro ilustrado por Enrico Mazzanti</h5>
+    
+    </ion-card>
+  </ion-item>
+
+  <ion-item>
+
+      <img src="https://firebasestorage.googleapis.com/v0/b/epe3-77ed6.appspot.com/o/7.jpg?alt=media&token=b6789734-c9cb-447a-96ad-4d0549dd9fa2" width="200" height="200">
+    <ion-card color="primary">
+        
+  <ion-label color="dark">PANCHO SAAVEDRA</ion-label>
+    <ion-toggle color="primary"  [(ngModel)]="libro3" ></ion-toggle>
+      <h5 *ngIf="libro3">Francisco Javier Saavedra Guerra, ​​ conocido como «Pancho» Saavedra, es un presentador de televisión chileno</h5>
+    
+    </ion-card>
+  </ion-item>
+
+</ion-list>
+
+</ion-content>
