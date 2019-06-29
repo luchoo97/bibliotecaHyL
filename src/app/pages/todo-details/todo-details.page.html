@@ -9,33 +9,48 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding color="warning">
  <ion-list lines="full">
    
-      <ion-item *ngIf="todo"> 
-        <ion-input required type="text" placeholder="titulo" [(ngModel)]="todo.titulo">
+
+      <ion-item *ngIf="todo" > 
+          <ion-label position="floating"> Titulo</ion-label>
+        <ion-input required type="text" placeholder="Titulo" [(ngModel)]="todo.titulo">
 
         </ion-input>
 
       </ion-item>
+     
       <ion-item *ngIf="todo"> 
+          <ion-label position="floating">Autor</ion-label>
         <ion-input required type="text" placeholder="Autor" [(ngModel)]="todo.Autor">
 
         </ion-input>
       </ion-item>
+      
+      
       <ion-item *ngIf="todo"> 
+          <ion-label position="floating">Editorial</ion-label>
         <ion-input required type="text" placeholder="Editorial" [(ngModel)]="todo.Editorial">
 
         </ion-input>
       </ion-item>
-        <ion-item *ngIf="todo"> 
+        <ion-item *ngIf="todo">
+            <ion-label position="floating">Año</ion-label>
             <ion-input required type="text" placeholder="Año" [(ngModel)]="todo.Fila">
     
             </ion-input>
       </ion-item>
+
+      
+        
+      
      
       
  </ion-list>
+
+ 
+ <img src="https://firebasestorage.googleapis.com/v0/b/epe3-77ed6.appspot.com/o/actualizar.png?alt=media&token=89153d47-aa5b-455d-8eeb-7e8087a628fe" width="150" height="150" class="center">
 
  <ion-button expand="full" (click)="saveTodo()">Guardar</ion-button>
  <ion-fab vertical="bottom" horizontal="end" slot="fixed" color="danger">
