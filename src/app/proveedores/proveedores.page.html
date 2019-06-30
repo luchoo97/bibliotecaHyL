@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar color="primary">
+      <img src="https://firebasestorage.googleapis.com/v0/b/epe3-77ed6.appspot.com/o/Imagen2.png?alt=media&token=52e63a11-63ee-4db8-873a-d084956fe7dd" width="100" height="100" >
+    
+    <ion-title>
+      LISTA DE PROVEEDORES
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding color="warning">
+ <ion-list>
+   <ion-item-sliding *ngFor="let todo of proveedores">
+      <ion-item lines="inset" button [routerLink]="['/detailss', todo.id]" > 
+        <ion-grid>
+            <ion-row style="padding:10px" style="background: #444">
+              <ion-col col-auto>
+                <p style="color: #fff">Empresa: {{todo.Empresa}}</p>
+                <p style="color: white">Dreccion: {{todo.Dreccion}} </p>
+                 <p style="color: white">Telefono: {{todo.Telefono}}</p>
+                 <p style="color: white">Fax: {{todo.Fax}}</p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+      </ion-item>
+
+      
+    
+
+      <ion-item-options side="end">
+        <ion-item-option (click)="onRemove(item)" color="secodary">
+          <ion-icon name="checkmark" slot="end">
+
+          </ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+
+   </ion-item-sliding>
+
+   
+
+ </ion-list>
+ <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+   <ion-fab-button routerLink="/detailss" routerDirection="forward">
+    <ion-icon name="add"></ion-icon>
+  </ion-fab-button>
+ </ion-fab>
+</ion-content>

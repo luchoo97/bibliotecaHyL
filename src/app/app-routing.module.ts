@@ -19,7 +19,10 @@ const routes: Routes = [
   { path: 'details', loadChildren: './pages/todo-details/todo-details.module#TodoDetailsPageModule'},
   { path: 'ingresar', loadChildren: './ingresar/ingresar.module#IngresarPageModule' },
   { path: 'nosotros', loadChildren: './nosotros/nosotros.module#NosotrosPageModule' },
-  { path: 'libros', loadChildren: './libros/libros.module#LibrosPageModule' }
+  { path: 'libros', loadChildren: './libros/libros.module#LibrosPageModule' },
+  { path: 'proveedores', loadChildren: './proveedores/proveedores.module#ProveedoresPageModule' },
+  { path: 'detailss/:id', loadChildren: './pages/todoo-details/todoo-details.module#TodooDetailsPageModule' },
+  { path: 'detailss', loadChildren: './pages/todoo-details/todoo-details.module#TodooDetailsPageModule' }
 ];
 
 @NgModule({
