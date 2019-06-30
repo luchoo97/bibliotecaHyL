@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      LISTA DE PROVEEDORES
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding color="warning">
+ <ion-list lines="full">
+   
+
+      <ion-item *ngIf="todo" > 
+          <ion-label position="floating"> Empresa</ion-label>
+        <ion-input required type="text" placeholder="Empresa" [(ngModel)]="todo.Empresa">
+
+        </ion-input>
+
+      </ion-item>
+     
+      <ion-item *ngIf="todo"> 
+          <ion-label position="floating">Dirección</ion-label>
+        <ion-input required type="text" placeholder="direccion" [(ngModel)]="todo.Direccion">
+
+        </ion-input>
+      </ion-item>
+      
+      
+      <ion-item *ngIf="todo"> 
+          <ion-label position="floating">Telefono</ion-label>
+        <ion-input required type="text" placeholder="Telefono" [(ngModel)]="todo.Telefono">
+
+        </ion-input>
+      </ion-item>
+        <ion-item *ngIf="todo">
+            <ion-label position="floating">Fax</ion-label>
+            <ion-input required type="text" placeholder="Fax" [(ngModel)]="todo.Fax">
+    
+            </ion-input>
+      </ion-item>
+
+      
+        
+      
+     
+      
+ </ion-list>
+
+ 
+ <img src="https://firebasestorage.googleapis.com/v0/b/epe3-77ed6.appspot.com/o/actualizar.png?alt=media&token=89153d47-aa5b-455d-8eeb-7e8087a628fe" width="150" height="150" class="center">
+
+ <ion-button expand="full" (click)="saveTodo()">Guardar</ion-button>
+ <ion-fab vertical="bottom" horizontal="end" slot="fixed" color="danger">
+   <ion-fab-button color="danger" routerLink="/proveedores" routerDirection="forward" (click)="onRemove(todoId)">
+    <ion-icon name="trash"></ion-icon>
+  </ion-fab-button>
+ </ion-fab>
+</ion-content>
