@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {TaskI} from '../models/task.interface';
 import {TodoService} from '../services/todo.service';
+import {NavController} from '@ionic/angular';
 
 
 @Component({
@@ -12,8 +13,12 @@ export class ListPage implements OnInit {
   
   biblioteca: TaskI[];
  
-  constructor(private todoService:TodoService) {
+  constructor(private todoService:TodoService, public NavController: NavController) {
     
+  }
+
+  IrVolver(){
+    this.NavController.navigateBack('menu');
   }
 
   ngOnInit() {

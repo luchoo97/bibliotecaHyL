@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TaskI } from 'src/app/models/tassk.interface';
+import { TaskII } from 'src/app/models/tassk.interface';
 import { TodoService } from '../../services/todo.service';
 import { ActivatedRoute } from '@angular/router';
 import { NavController, LoadingController } from '@ionic/angular';
@@ -10,11 +10,11 @@ import { NavController, LoadingController } from '@ionic/angular';
   styleUrls: ['./todoo-details.page.scss'],
 })
 export class TodooDetailsPage implements OnInit {
-  todo: TaskI = {
+  todo: TaskII = {
     Empresa: ' ',
     Direccion: ' ',
     Telefono: ' ',
-    Fax: ' ',
+    Fax: ' '
 
     
     

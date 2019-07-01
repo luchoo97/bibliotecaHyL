@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TaskII} from '../models/tassk.interface';
 import {TodoService} from '../services/todo.service';
+import {NavController} from '@ionic/angular';
 
 @Component({
   selector: 'app-proveedores',
@@ -10,7 +11,11 @@ import {TodoService} from '../services/todo.service';
 export class ProveedoresPage implements OnInit {
   proveedores: TaskII[];
 
-  constructor(private todoService:TodoService) { }
+  constructor(private todoService:TodoService , public NavController: NavController) { }
+
+  IrVolver(){
+    this.NavController.navigateBack('menu');
+  }
 
   ngOnInit() {
     this.todoService.geetTodos().subscribe(res => this.proveedores = res);

@@ -18,7 +18,7 @@ export class IngresarPage implements OnInit {
 
   onSubmitLogin(){
    this.authService.login(this.email, this.password).then( res =>{
-    this.router.navigate(['/list']);
+    this.router.navigate(['/menu']);
    }).catch(err => alert('los datos son incorrecto'));
    
   }
