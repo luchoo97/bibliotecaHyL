@@ -23,7 +23,13 @@ const routes: Routes = [
   { path: 'proveedores', loadChildren: './proveedores/proveedores.module#ProveedoresPageModule' },
   { path: 'detailss/:id', loadChildren: './pages/todoo-details/todoo-details.module#TodooDetailsPageModule' },
   { path: 'detailss', loadChildren: './pages/todoo-details/todoo-details.module#TodooDetailsPageModule' },
-  { path: 'menu', loadChildren: './menu/menu.module#MenuPageModule' }
+  { path: 'menu', loadChildren: './menu/menu.module#MenuPageModule' },
+  { path: 'pages', loadChildren: './pages/pages.module#PagesPageModule' },
+  { path: 'detailsss/:id', loadChildren: './pages/todooo-details/todooo-details.module#TodoooDetailsPageModule' },
+  { path: 'detailsss', loadChildren: './pages/todooo-details/todooo-details.module#TodoooDetailsPageModule'},
+  { path: 'autor', loadChildren: './autor/autor.module#AutorPageModule' }
+
+
 ];
 
 @NgModule({

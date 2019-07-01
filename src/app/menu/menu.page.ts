@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {NavController } from '@ionic/angular';
 
+
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.page.html',
@@ -19,8 +20,12 @@ export class MenuPage implements OnInit {
    IrProveedores(){
      this.NavController.navigateForward('proveedores');
    }
+   IrAutor(){
+     this.NavController.navigateForward('autor');
+   }
 
   ngOnInit() {
+    
   }
 
 }
