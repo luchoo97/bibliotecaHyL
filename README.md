@@ -10,4 +10,4 @@
 ![Screenshot_2019-07-01-16-06-33](https://user-images.githubusercontent.com/38507372/60463667-9ab2c280-9c1a-11e9-823f-2f21f93f89fc.png)
 ![Screenshot_2019-07-01-16-06-01](https://user-images.githubusercontent.com/38507372/60463688-a8684800-9c1a-11e9-874c-69605b232ee5.png)
 😎
-ios-book
+<ion-icon name="book"></ion-icon>
