@@ -1,155 +1,195 @@
 <ion-header>
-    <ion-toolbar color="primary">
-      
-          <img src="https://firebasestorage.googleapis.com/v0/b/epe3-77ed6.appspot.com/o/Imagen2.png?alt=media&token=52e63a11-63ee-4db8-873a-d084956fe7dd" width="100" height="100" >
-          <ion-buttons slot="start">
-        <ion-menu-button></ion-menu-button>
-      </ion-buttons>
-      
-      <ion-title>
-        Libros
-      </ion-title>
-    </ion-toolbar>
-  </ion-header>
-  
+  <ion-toolbar color="primary">
 
-<ion-content padding color="warning" >
- <ion-list>
-   
-   <ion-item>
+    <img
+      src="https://firebasestorage.googleapis.com/v0/b/epe3-77ed6.appspot.com/o/Imagen2.png?alt=media&token=52e63a11-63ee-4db8-873a-d084956fe7dd"
+      width="100" height="100">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
 
-      <img src="https://firebasestorage.googleapis.com/v0/b/epe3-77ed6.appspot.com/o/5.jpg?alt=media&token=886f640e-c211-4370-b539-f072803aa263" width="200" height="200">
-    <ion-card color="warning">
-        
-  <ion-label color="dark">EL JARDIN SECRETO</ion-label>
-    <ion-toggle color="primary"  [(ngModel)]="libro1" ></ion-toggle>
-      <h5 *ngIf="libro1">El jardín secreto es un libro escrito por Frances Hodgson Burnett en 1910, adaptado al cine y a la televisión numerosas veces. Hodgson lo fue publicando a partir de otoño de 1910 en folletos. El libro salió completo en 1911.</h5>
-    
-    </ion-card>
-  </ion-item>
-  <ion-item>
-
-      <img src="https://firebasestorage.googleapis.com/v0/b/epe3-77ed6.appspot.com/o/6.jpg?alt=media&token=ac9713e9-7ca9-43c4-81a7-70ff852860c3" width="200" height="200">
-    <ion-card color="primary">
-        
-  <ion-label color="dark">PINOCHO</ion-label>
-    <ion-toggle color="primary"  [(ngModel)]="libro2" ></ion-toggle>
-      <h5 *ngIf="libro2">Pinocho (en italiano Pinocchio) es un personaje de la literatura italiana y universal, que consiste en una marioneta de madera protagonista del libro "Las aventuras de Pinocho", escrito por Carlo Collodi, seudónimo de Carlo Lorenzini (Florencia 1826-1890), y publicado en un periódico italiano entre 1882 y 1883, con los títulos "Storia di un Burattino" ("Historia de un títere") y "Le avventure di Pinocchio" ("Las aventuras de Pinocho'"), libro ilustrado por Enrico Mazzanti</h5>
-    
-    </ion-card>
-  </ion-item>
-
-  <ion-item>
-
-      <img src="https://firebasestorage.googleapis.com/v0/b/epe3-77ed6.appspot.com/o/7.jpg?alt=media&token=b6789734-c9cb-447a-96ad-4d0549dd9fa2" width="200" height="200">
-    <ion-card color="primary">
-        
-  <ion-label color="dark">PANCHO SAAVEDRA</ion-label>
-    <ion-toggle color="primary"  [(ngModel)]="libro3" ></ion-toggle>
-      <h5 *ngIf="libro3">Francisco Javier Saavedra Guerra, ​​ conocido como «Pancho» Saavedra, es un presentador de televisión chileno</h5>
-    
-    </ion-card>
-  </ion-item>
-  <ion-item>
-
-    <img src="https://firebasestorage.googleapis.com/v0/b/epe3-77ed6.appspot.com/o/7.jpg?alt=media&token=b6789734-c9cb-447a-96ad-4d0549dd9fa2" width="200" height="200">
-  <ion-card color="primary">
-      
-<ion-label color="dark">Harry Potter y la camara secreta</ion-label>
-  <ion-toggle color="primary"  [(ngModel)]="libro4" ></ion-toggle>
-    <h5 *ngIf="libro4">Es el segundo libro de la serie literaria Harry Potter, escrito por la autora británica J. K. Rowling en 1998.
-
-      La trama sigue el segundo año de Harry Potter en el Colegio Hogwarts de Magia y Hechicería, durante el cual una serie de mensajes en las paredes de los pasillos de la escuela advierten que la Cámara de los Secretos ha sido abierta y que el «heredero de Slytherin» matará a todos los alumnos que no provengan de familias con sangre mágica</h5>
-  
-  </ion-card>
-</ion-item>
-
-<ion-item>
-
-  <img src="https://firebasestorage.googleapis.com/v0/b/epe3-77ed6.appspot.com/o/hp1.jpg?alt=media&token=64f68203-c47c-457b-a275-3a35a637edaa" width="200" height="200">
-<ion-card color="primary">
-    
-<ion-label color="dark">Harry Potter y la piedra filosofal</ion-label>
-<ion-toggle color="primary"  [(ngModel)]="libro5" ></ion-toggle>
-  <h5 *ngIf="libro5">Es el primer libro de la serie literaria Harry Potter, escrito por la autora británica J. K. Rowling en 1997, que supuso además el debut de Rowling como escritora profesional.</h5>
-
-</ion-card>
-</ion-item>
+    <ion-title>
+      Libros
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
 
 
+<ion-content padding color="warning">
+  <ion-list>
 
-<ion-item>
+    <ion-item>
 
-  <img src="https://firebasestorage.googleapis.com/v0/b/epe3-77ed6.appspot.com/o/CN.jpg?alt=media&token=cde4dde5-79b0-42a3-9f50-5c21e0492a22" width="200" height="200">
-<ion-card color="primary">
-    
-<ion-label color="dark">Las Cronocas de Narnia</ion-label>
-<ion-toggle color="primary"  [(ngModel)]="libro6" ></ion-toggle>
-  <h5 *ngIf="libro6"> Relata las aventuras en Narnia, tierra de fantasía y magia creada por el autor, y poblada por animales parlantes y otras criaturas mitológicas que se ven envueltas en la eterna lucha entre el bien y el mal. Aslan, un legendario león creador del país de Narnia, se constituye como el auténtico protagonista de todos los relatos</h5>
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/epe3-77ed6.appspot.com/o/5.jpg?alt=media&token=886f640e-c211-4370-b539-f072803aa263"
+        width="200" height="200">
+      <ion-card color="warning">
 
-</ion-card>
-</ion-item>
+        <ion-label color="dark">El Jardin Secreto</ion-label>
+        <ion-toggle color="primary" [(ngModel)]="libro1"></ion-toggle>
+        <h5 *ngIf="libro1">El jardín secreto es un libro escrito por Frances Hodgson Burnett en 1910, adaptado al cine y
+          a la televisión numerosas veces. Hodgson lo fue publicando a partir de otoño de 1910 en folletos. El libro
+          salió completo en 1911.</h5>
 
+      </ion-card>
+    </ion-item>
+    <ion-item>
 
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/epe3-77ed6.appspot.com/o/6.jpg?alt=media&token=ac9713e9-7ca9-43c4-81a7-70ff852860c3"
+        width="200" height="200">
+      <ion-card color="primary">
 
+        <ion-label color="dark">Pinocho</ion-label>
+        <ion-toggle color="primary" [(ngModel)]="libro2"></ion-toggle>
+        <h5 *ngIf="libro2">Pinocho (en italiano Pinocchio),Es un personaje de la literatura italiana y universal, que
+          consiste en una marioneta de madera protagonista del libro "Las aventuras de Pinocho", escrito por Carlo
+          Collodi, seudónimo de Carlo Lorenzini (Florencia 1826-1890), y publicado en un periódico italiano entre 1882 y
+          1883, con los títulos "Storia di un Burattino" ("Historia de un títere") y "Le avventure di Pinocchio" ("Las
+          aventuras de Pinocho'"), libro ilustrado por Enrico Mazzanti</h5>
 
-<ion-item>
+      </ion-card>
+    </ion-item>
 
-  <img src="https://firebasestorage.googleapis.com/v0/b/epe3-77ed6.appspot.com/o/CNPC.jpg?alt=media&token=9b298253-3f5c-48d1-8ff1-b7e081fcb02e" width="200" height="200">
-<ion-card color="primary">
-    
-<ion-label color="dark">Las Cronocas de Narnia el principe Caspian</ion-label>
-<ion-toggle color="primary"  [(ngModel)]="libro7" ></ion-toggle>
-  <h5 *ngIf="libro7">Historia de El príncipe Caspian acontece un año después de éste, y narra hechos que les sucedieron a los hermanos Pevensie (Peter, Susan, Edmund y Lucy) que, mientras esperaban el tren para llegar a la escuela, son transportados "mágicamente" de vuelta a Narnia.</h5>
+    <ion-item>
 
-</ion-card>
-</ion-item>
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/epe3-77ed6.appspot.com/o/7.jpg?alt=media&token=b6789734-c9cb-447a-96ad-4d0549dd9fa2"
+        width="200" height="200">
+      <ion-card color="primary">
+
+        <ion-label color="dark">PANCHO SAAVEDRA</ion-label>
+        <ion-toggle color="primary" [(ngModel)]="libro3"></ion-toggle>
+        <h5 *ngIf="libro3">Francisco Javier Saavedra Guerra, ​​ conocido como «Pancho» Saavedra, es un presentador de
+          televisión chileno</h5>
+
+      </ion-card>
+    </ion-item>
+    <ion-item>
+
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/epe3-77ed6.appspot.com/o/7.jpg?alt=media&token=b6789734-c9cb-447a-96ad-4d0549dd9fa2"
+        width="200" height="200">
+      <ion-card color="primary">
+
+        <ion-label color="dark">Harry Potter y la camara secreta</ion-label>
+        <ion-toggle color="primary" [(ngModel)]="libro4"></ion-toggle>
+        <h5 *ngIf="libro4">Es el segundo libro de la serie literaria Harry Potter, escrito por la autora británica J. K.
+          Rowling en 1998.
+
+          La trama sigue el segundo año de Harry Potter en el Colegio Hogwarts de Magia y Hechicería, durante el cual
+          una serie de mensajes en las paredes de los pasillos de la escuela advierten que la Cámara de los Secretos ha
+          sido abierta y que el «heredero de Slytherin» matará a todos los alumnos que no provengan de familias con
+          sangre mágica</h5>
+
+      </ion-card>
+    </ion-item>
+
+    <ion-item>
+
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/epe3-77ed6.appspot.com/o/hp1.jpg?alt=media&token=64f68203-c47c-457b-a275-3a35a637edaa"
+        width="200" height="200">
+      <ion-card color="primary">
+
+        <ion-label color="dark">Harry Potter y la piedra filosofal</ion-label>
+        <ion-toggle color="primary" [(ngModel)]="libro5"></ion-toggle>
+        <h5 *ngIf="libro5">Es el primer libro de la serie literaria Harry Potter, escrito por la autora británica J. K.
+          Rowling en 1997, que supuso además el debut de Rowling como escritora profesional.</h5>
+
+      </ion-card>
+    </ion-item>
 
 
 
-<ion-item>
+    <ion-item>
 
-  <img src="https://firebasestorage.googleapis.com/v0/b/epe3-77ed6.appspot.com/o/ldb.jpg?alt=media&token=680e5fce-25fd-4749-8ee5-cf1c85749e3f" width="200" height="200">
-<ion-card color="primary">
-    
-<ion-label color="dark">Luces de Bohemia</ion-label>
-<ion-toggle color="primary"  [(ngModel)]="libro8" ></ion-toggle>
-  <h5 *ngIf="libro8">Corrupción desigualdad, lucha social, pobreza, revolución… Una obra que trasciende su tiempo hasta convertirse en una de las visiones más lúcidas y corrosivas de nuestra realidad..</h5>
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/epe3-77ed6.appspot.com/o/CN.jpg?alt=media&token=cde4dde5-79b0-42a3-9f50-5c21e0492a22"
+        width="200" height="200">
+      <ion-card color="primary">
 
-</ion-card>
-</ion-item>
+        <ion-label color="dark">Las Cronicas de Narnia</ion-label>
+        <ion-toggle color="primary" [(ngModel)]="libro6"></ion-toggle>
+        <h5 *ngIf="libro6"> Relata las aventuras en Narnia, tierra de fantasía y magia creada por el autor, y poblada
+          por animales parlantes y otras criaturas mitológicas que se ven envueltas en la eterna lucha entre el bien y
+          el mal. Aslan, un legendario león creador del país de Narnia, se constituye como el auténtico protagonista de
+          todos los relatos</h5>
 
-
-<ion-item>
-
-  <img src="https://firebasestorage.googleapis.com/v0/b/epe3-77ed6.appspot.com/o/CDMA.jpg?alt=media&token=248340d2-809e-48d6-9df4-9e9a6fa3dbc8" width="200" height="200">
-<ion-card color="primary">
-    
-<ion-label color="dark">Crónica de una muerte anunciada</ion-label>
-<ion-toggle color="primary"  [(ngModel)]="libro9" ></ion-toggle>
-  <h5 *ngIf="libro9">Historia contada se inspira en un suceso real, ocurrido en 1951 en el municipio de Sucre, ubicado al sur del departamento Homónimo, del que el autor tomó la acción central (el crimen), los protagonistas, el escenario y las circunstancias, alterándolo narrativamente, pero sin descuidar nunca los datos y las precisiones obligadas en toda crónica periodística.</h5>
-
-</ion-card>
-</ion-item>
-
-<ion-item>
-
-  <img src="https://firebasestorage.googleapis.com/v0/b/epe3-77ed6.appspot.com/o/AEEPDLM.jpg?alt=media&token=74a4078f-883e-4fd9-a585-34eab0489b88" width="200" height="200">
-<ion-card color="primary">
-    
-<ion-label color="dark">Alicia en el pais de las maravillas</ion-label>
-<ion-toggle color="primary"  [(ngModel)]="libro10" ></ion-toggle>
-  <h5 *ngIf="libro10">Historia cuenta cómo una niña llamada Alicia cae por un agujero, encontrándose en un mundo peculiar, poblado por humanos y criaturas antropomórficas. </h5>
-
-</ion-card>
-</ion-item>
+      </ion-card>
+    </ion-item>
 
 
 
 
+    <ion-item>
+
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/epe3-77ed6.appspot.com/o/CNPC.jpg?alt=media&token=9b298253-3f5c-48d1-8ff1-b7e081fcb02e"
+        width="200" height="200">
+      <ion-card color="primary">
+
+        <ion-label color="dark">Las Cronicas de Narnia el principe Caspian</ion-label>
+        <ion-toggle color="primary" [(ngModel)]="libro7"></ion-toggle>
+        <h5 *ngIf="libro7">Historia de El príncipe Caspian acontece un año después de éste, y narra hechos que les
+          sucedieron a los hermanos Pevensie (Peter, Susan, Edmund y Lucy) que, mientras esperaban el tren para llegar a
+          la escuela, son transportados "mágicamente" de vuelta a Narnia.</h5>
+
+      </ion-card>
+    </ion-item>
 
 
 
-</ion-list>
+    <ion-item>
+
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/epe3-77ed6.appspot.com/o/ldb.jpg?alt=media&token=680e5fce-25fd-4749-8ee5-cf1c85749e3f"
+        width="200" height="200">
+      <ion-card color="primary">
+
+        <ion-label color="dark">Luces de Bohemia</ion-label>
+        <ion-toggle color="primary" [(ngModel)]="libro8"></ion-toggle>
+        <h5 *ngIf="libro8">Corrupción desigualdad, lucha social, pobreza, revolución… Una obra que trasciende su tiempo
+          hasta convertirse en una de las visiones más lúcidas y corrosivas de nuestra realidad..</h5>
+
+      </ion-card>
+    </ion-item>
+
+
+    <ion-item>
+
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/epe3-77ed6.appspot.com/o/CDMA.jpg?alt=media&token=248340d2-809e-48d6-9df4-9e9a6fa3dbc8"
+        width="200" height="200">
+      <ion-card color="primary">
+
+        <ion-label color="dark">Crónica de una muerte anunciada</ion-label>
+        <ion-toggle color="primary" [(ngModel)]="libro9"></ion-toggle>
+        <h5 *ngIf="libro9">Historia contada se inspira en un suceso real, ocurrido en 1951 en el municipio de Sucre,
+          ubicado al sur del departamento Homónimo, del que el autor tomó la acción central (el crimen), los
+          protagonistas, el escenario y las circunstancias, alterándolo narrativamente, pero sin descuidar nunca los
+          datos y las precisiones obligadas en toda crónica periodística.</h5>
+
+      </ion-card>
+    </ion-item>
+
+    <ion-item>
+
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/epe3-77ed6.appspot.com/o/AEEPDLM.jpg?alt=media&token=74a4078f-883e-4fd9-a585-34eab0489b88"
+        width="200" height="200">
+      <ion-card color="primary">
+
+        <ion-label color="dark">Alicia en el pais de las maravillas</ion-label>
+        <ion-toggle color="primary" [(ngModel)]="libro10"></ion-toggle>
+        <h5 *ngIf="libro10">Historia cuenta cómo una niña llamada Alicia cae por un agujero, encontrándose en un mundo
+          peculiar, poblado por humanos y criaturas antropomórficas. </h5>
+
+      </ion-card>
+    </ion-item>
+
+
+
+  </ion-list>
 
 </ion-content>
